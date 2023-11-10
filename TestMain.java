@@ -11,17 +11,16 @@ public class TestMain {
         fbc.setDraws(10);
         fbc.setGoals(400);
 
-        FootballClubFile fileHandler = new FootballClubFile();
+        FileRepo<FootballClub> fileHandler = new FileRepo<>(FootballClub.class);
 
-        // fileHandler.save(fbc);
-        // fileHandler.save(fbc);
+        
+        fileHandler.save(fbc); // save an object of a class mentioned in FileRepo class
 
-        List<FootballClub> clubs = fileHandler.findAll();
-
-        for(int i = 0; i < clubs.size(); i++){
-            System.out.println(clubs.get(i).getName());
+        List<FootballClub> clubs = fileHandler.findAll(); // get all objects from fileHandler
+        for(int i = 0; i < clubs.size(); i++){              // list all using for loop
+            System.out.println(clubs.get(i).getName());  
         }
         
-        System.out.println(fileHandler.getById(1).getGoals());
+        System.out.println(fileHandler.getById(1).getGoals());  //get object by id
     }
 }

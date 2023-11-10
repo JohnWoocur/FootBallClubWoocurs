@@ -7,16 +7,15 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
-
 public class FileHandler {
     private File file;
 
     public FileHandler(File file) { // future Gen Type
         this.file = file;
-        file.mkdir();
-
-        if (!file.exists()) {
-            file.mkdir();
+        try {
+            file.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -48,13 +47,13 @@ public class FileHandler {
 
             return data;
         } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
+            System.out.println("FileNotFoundException");
             e.printStackTrace();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
+            System.out.println("IOException");
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
-            // TODO Auto-generated catch block
+            System.out.println("ClassNotFoundException");
             e.printStackTrace();
         }
         return new ArrayList<FootballClub>();
