@@ -1,7 +1,7 @@
 package App;
 
 import java.util.Scanner;
-import App.createClub;
+
 
 //import Statements
 
@@ -25,7 +25,7 @@ import App.createClub;
 	            int c = scanner.nextInt();
 	            switch (c) {
 	                case 1:
-	                    createClub.create_Club();
+	                    Club.create();
 	                    break;
 
 	                case 2:
