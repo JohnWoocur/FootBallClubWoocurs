@@ -1,3 +1,5 @@
+package App.Lib;
+
 import java.io.File;
 import java.util.List;
 import java.util.Optional;
@@ -8,7 +10,8 @@ public class FileRepo<T extends Identifiable> {
     private FileHandler storage;
 
     public FileRepo(Class<T> tClass) {
-        String fileName = tClass.getCanonicalName() + ".ser";
+        // String classData[] = tClass.getCanonicalName().split(".");
+        String fileName = "App\\Data\\" + tClass.getSimpleName() + ".ser";
         System.out.println("Accessing data from " + fileName);
         System.out.println();
         storage = new FileHandler(new File(fileName));

@@ -1,6 +1,10 @@
+package App;
+
+import App.Lib.Identifiable;
+
 import java.io.Serializable;
 
-public class FootballClub implements Serializable, Identifiable{
+public class FootballClub implements Serializable, Identifiable {
     private int id;
     private String name;
     private String location;

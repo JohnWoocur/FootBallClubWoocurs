@@ -1,3 +1,8 @@
+package App;
+
+import App.FootballClub;
+import App.Lib.FileRepo;
+
 import java.util.List;
 public class TestMain {
     public static void main(String[] args) {
@@ -14,7 +19,7 @@ public class TestMain {
         FileRepo<FootballClub> fileHandler = new FileRepo<>(FootballClub.class);
 
         
-        fileHandler.save(fbc); // save an object of a class mentioned in FileRepo class
+        fileHandler.save(fbc); // save an object of a class mentioned in App.Lib.FileRepo class
 
         List<FootballClub> clubs = fileHandler.findAll(); // get all objects from fileHandler
         for(int i = 0; i < clubs.size(); i++){              // list all using for loop
