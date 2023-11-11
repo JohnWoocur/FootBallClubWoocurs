@@ -1,7 +1,6 @@
-package App;
+package App.Models;
 
 import App.Lib.Identifiable;
-
 import java.io.Serializable;
 
 public class FootballClub implements Serializable, Identifiable {

@@ -1,7 +1,7 @@
 package App;
 
-import App.FootballClub;
 import App.Lib.FileRepo;
+import App.Models.FootballClub;
 
 import java.util.List;
 public class TestMain {

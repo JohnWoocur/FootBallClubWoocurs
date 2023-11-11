@@ -1,7 +1,5 @@
 package App.Lib;
 
-import App.FootballClub;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -60,6 +58,6 @@ public class FileHandler {
             System.out.println("ClassNotFoundException");
             e.printStackTrace();
         }
-        return new ArrayList<FootballClub>();
+        return new ArrayList<>();
     }
 }
