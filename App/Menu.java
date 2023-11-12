@@ -11,13 +11,13 @@ import java.util.Scanner;
 	        while (true) {
 				System.out.println("\n************ Welcome to the FOOTBALL CLUB ************");
 				System.out.println();
-	            System.out.println("\t\t\t 1. Create a Football club");
-	            System.out.println("\t\t\t 2. Delete a football club");
-	            System.out.println("\t\t\t 3. Display the various static");
-	            System.out.println("\t\t\t 4. Display the premier league table");
-	            System.out.println("\t\t\t 5. Display the event");
-	            System.out.println("\t\t\t 6. Update Score ");
-	            System.out.println("\t\t\t 7. Set match date");
+	            System.out.println("\t\t\t 1. Create Football club");
+	            System.out.println("\t\t\t 2. Delete football club");
+	            System.out.println("\t\t\t 3. Update football club");
+	            System.out.println("\t\t\t 4. Show football club");
+	            System.out.println("\t\t\t 5. Update Score");
+	            System.out.println("\t\t\t 6. Schedule match ");
+	            System.out.println("\t\t\t 7. Show fixed match");
 	            System.out.println("\t\t\t 8. Exit");
 	            System.out.println("");
 	            System.out.print("\t\t Choose One: ");
@@ -29,7 +29,7 @@ import java.util.Scanner;
 	                    break;
 
 	                case 2:
-	                    //DeleteClub.delete();
+	                    //DeleteClub.create();
 	                    break;
 
 	                case 3:
@@ -45,11 +45,11 @@ import java.util.Scanner;
 	                    break;
 
 	                case 6:
-	                    //Update.update_Score();
+	                    Match.create();
 	                    break;
 
 	                case 7:
-	                    System.out.println("Function not avaiable..");
+	                    //System.out.println("Function not avaiable..");
 	                    break;
 
 	                case 8:
